@@ -17,25 +17,49 @@
       body {
         background-color: black;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 95vh;
+        height: 100vh;
         overflow: hidden;
         font-family: "Courier New", Courier, monospace;
+        color: white;
+      }
+
+      /* Letter Styling */
+      .letter {
+        max-width: 800px;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      }
+
+      .letter h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .letter p {
+        font-size: 1.2rem;
+        line-height: 1.6;
       }
 
       /* Slideshow Container */
       .slideshow-container {
         position: relative;
         max-width: 800px;
-        width: 90%; /* Responsive width */
+        width: 90%;
         text-align: center;
       }
 
       /* Image Styling */
       .slideshow-container img {
         max-width: 100%;
-        max-height: 80vh;
+        max-height: 60vh;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
       }
@@ -57,11 +81,11 @@
       }
 
       .prev {
-        left: 10px; /* Adjusted for smaller screens */
+        left: 10px;
       }
 
       .next {
-        right: 10px; /* Adjusted for smaller screens */
+        right: 10px;
       }
 
       .prev:hover,
@@ -97,53 +121,291 @@
           font-size: 1.5rem;
           padding: 10px;
         }
+
+        .letter h1 {
+          font-size: 1.5rem;
+        }
+
+        .letter p {
+          font-size: 1rem;
+        }
       }
+
+      .fixed-size {
+        width: 80%;
+        height: 60vh;
+        object-fit: cover;
+      }
+
+      .slideshow-container img {
+        max-width: 80%;
+        max-height: 60vh;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        object-fit: cover;
+      }
+      
     </style>
   </head>
   <body>
+    <!-- Letter -->
+    <div class="letter">
+      <h1>Gửi Hằng,</h1>
+      <p>
+        Chúc em một ngày thật ý nghĩa và tràn đầy niềm vui! Những khoảnh khắc
+        bên em luôn là điều tuyệt vời nhất đối với anh. Hy vọng rằng những bức
+        ảnh này sẽ mang lại cho em những kỷ niệm đẹp và nụ cười rạng rỡ. Mãi yêu
+        em! ❤️
+      </p>
+    </div>
+
+    <!-- Slideshow -->
     <div class="slideshow-container">
       <!-- Slideshow Images -->
       <div class="slides">
-        <img src="images/1737384102264.jpg" alt="Hằng's Image 1" />
+        <img
+          src="images/1737384102264.jpg"
+          alt="Hằng's Image 1"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737389598692.jpg" alt="Hằng's Image 2" />
+        <img
+          src="images/1737389598692.jpg"
+          alt="Hằng's Image 2"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737394908885.jpg" alt="Hằng's Image 3" />
+        <img
+          src="images/1737394908885.jpg"
+          alt="Hằng's Image 3"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737395318886.jpg" alt="Hằng's Image 4" />
+        <img
+          src="images/1737395318886.jpg"
+          alt="Hằng's Image 4"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737395447179.jpg" alt="Hằng's Image 5" />
+        <img
+          src="images/1737395447179.jpg"
+          alt="Hằng's Image 5"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737478953325.jpg" alt="Hằng's Image 6" />
+        <img
+          src="images/1737478953325.jpg"
+          alt="Hằng's Image 6"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737479310286.jpg" alt="Hằng's Image 7" />
+        <img
+          src="images/1737479310286.jpg"
+          alt="Hằng's Image 7"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737479453509.jpg" alt="Hằng's Image 8" />
+        <img
+          src="images/1737479453509.jpg"
+          alt="Hằng's Image 8"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737479641954.jpg" alt="Hằng's Image 9" />
+        <img
+          src="images/1737479641954.jpg"
+          alt="Hằng's Image 9"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737479721065.jpg" alt="Hằng's Image 10" />
+        <img
+          src="images/1737479721065.jpg"
+          alt="Hằng's Image 10"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737565798165.jpg" alt="Hằng's Image 11" />
+        <img
+          src="images/1737565798165.jpg"
+          alt="Hằng's Image 11"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737566229770.jpg" alt="Hằng's Image 12" />
+        <img
+          src="images/1737566229770.jpg"
+          alt="Hằng's Image 12"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737566524750.jpg" alt="Hằng's Image 13" />
+        <img
+          src="images/1737566524750.jpg"
+          alt="Hằng's Image 13"
+          class="fixed-size"
+        />
       </div>
       <div class="slides">
-        <img src="images/1737566702580.jpg" alt="Hằng's Image 14" />
+        <img
+          src="images/1737566702580.jpg"
+          alt="Hằng's Image 14"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/00572244fa624b3c1273.jpg"
+          alt="Hằng's Image 15"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/0d05b1046922d87c8133.jpg"
+          alt="Hằng's Image 16"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/141382315a17eb49b206.jpg"
+          alt="Hằng's Image 17"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/17d85f458563343d6d72.jpg"
+          alt="Hằng's Image 18"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/1df9d2a90b8fbad1e39e.jpg"
+          alt="Hằng's Image 19"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/246bdbfd01dbb085e9ca.jpg"
+          alt="Hằng's Image 20"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/27d3bd0f6529d4778d38.jpg"
+          alt="Hằng's Image 21"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/27e7abc671e0c0be99f1.jpg"
+          alt="Hằng's Image 22"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/31da445b9e7d2f23766c.jpg"
+          alt="Hằng's Image 23"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/3e8883ba5b9ceac2b38d.jpg"
+          alt="Hằng's Image 24"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/469ba0c67ae0cbbe92f1.jpg"
+          alt="Hằng's Image 25"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/4db7958a4aacfbf2a2bd.jpg"
+          alt="Hằng's Image 26"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/4fabe7053d238c7dd532.jpg"
+          alt="Hằng's Image 27"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/82a4e4473e618f3fd670.jpg"
+          alt="Hằng's Image 28"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/ab9e73ffaad91b8742c8.jpg"
+          alt="Hằng's Image 29"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/b81f0ce3d6c5679b3ed4.jpg"
+          alt="Hằng's Image 30"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/ba7928c2f2e443ba1af5.jpg"
+          alt="Hằng's Image 31"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/d51ccafa10dca182f8cd.jpg"
+          alt="Hằng's Image 32"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/c66855df8ff93ea767e8.jpg"
+          alt="Hằng's Image 33"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/db4fbd336415d54b8c04.jpg"
+          alt="Hằng's Image 34"
+          class="fixed-size"
+        />
+      </div>
+      <div class="slides">
+        <img
+          src="images/fe0d0134de126f4c3603.jpg"
+          alt="Hằng's Image 35"
+          class="fixed-size"
+        />
       </div>
 
       <!-- Navigation Buttons -->
